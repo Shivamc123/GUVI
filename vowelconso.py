@@ -5,7 +5,7 @@ def vowelOrConsonant(x):
         x == 'U'): 
         print("Vowel") 
     elif (x>="a" and x<="z") or (x>="A" and x<="Z"):
-        print("Constant")
+        print("Consonant")
     else:
         print("invalid")
         
