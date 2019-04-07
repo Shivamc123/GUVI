@@ -7,7 +7,5 @@ def alpha(x,y,z):
     else:
         print(z)
         
-x=int(input())
-y=int(input())
-z=int(input())
-alpha(x,y,z) 
+x,y,z= [int(x) for x in input("").split()]
+alpha(x,y,z)
