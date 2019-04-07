@@ -1,6 +1,6 @@
 def check():
     try: 
-        x, y = [int(x) for x in input("Enter two value: ").split()]
+        x, y = [int(x) for x in input().split()]
         a=[]
         sum=0
         for i in range(1,x+1):
