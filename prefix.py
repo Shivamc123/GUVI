@@ -1,17 +1,32 @@
-def longestCommenPrefix(a):
-    size=len(a)
-    if(size==0):
-        return ""
-    if(size==1):
-        return a[0]
-    a.sort()
-    end=min(len(a[0]),len(a[size-1]))
-    i=0
-    while(i<end and a[0][i]==a[size-1][i]):
-        i+=1
-    pre=a[0][0:i]
-    return pre
-if __name__=="__main__":
-  n=input().split()
-  print(longestCommenPrefix(n))
-    
+N=int(input())
+a=[]
+b=[]
+for i in range(N):
+    x=list(input())
+    a.append(x)
+m=len(a[0])
+N=a[0]
+
+for i in range(1,len(a)):
+    if m<len(a[i]):
+        m=m
+    else:
+        m=len(a[i])
+        N=a[i]
+
+for i in range(m):
+    k=j=0
+    while k<len(a):
+        if N[i]!=a[k][i]:
+            j=-1
+            break
+        else:
+            j=1
+            k=k+1
+    if j==1:
+        b.append(N[i])
+    elif j==-1:
+        break
+str=""
+b=str.join(b)
+print(b)
