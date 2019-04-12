@@ -1,7 +1,4 @@
-def reverse(s): 
-  str = "" 
-  for i in s: 
-    str = i + str
-  return str
-s=input()
-print (reverse(s)) 
+def reverseWordSentence(Sentence): 
+  return ' '.join(word[::-1] for word in Sentence.split(" ")) 
+Sentence=input()
+print(reverseWordSentence(Sentence))
