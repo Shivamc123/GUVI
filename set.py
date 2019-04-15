@@ -2,9 +2,9 @@ def common_member(a, b):
     a_set = set(a) 
     b_set = set(b) 
     if (a_set & b_set): 
-        print("yes") 
+        print("YES") 
     else: 
-        print("no")  
+        print("NO")  
            
 n,m =[int(x) for x in input().split()]
 a = []
