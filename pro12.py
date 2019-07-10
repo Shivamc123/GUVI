@@ -1,12 +1,20 @@
 #shivambhai
-aa,bb=map(int,input().split())
-ls=list(map(int,input().split()))
-l=[]
-for i in range(0,bb):
-     u2,v2=map(int,input().split())
-     l.append([u2,v2])
-for i in range(bb):
-     lower=l[i][0]
-     upper=l[i][1]
-     s=sum(ls[lower-1:upper])
-     print(s)
+m,r=input().split()
+m=int(m)
+r=int(r)
+ar=[int(i) for i in input().split()]
+
+x=[]
+y=[]
+for i in range(0,r):
+     a,b=input().split()
+     x.append(a)
+     y.append(b)
+for i in range(0,r):
+     sum=0
+     s=int(x[i])-1
+
+     t=int(y[i])-1
+     for j in range(s,t+1):
+          sum=sum+ar[j]
+     print(sum,end=" "
