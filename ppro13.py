@@ -11,3 +11,4 @@ for i in range(0,nn):
     del s1[:]
 for z in range(0,len(k1)):
     print(k1[z])
+    #shivam.
