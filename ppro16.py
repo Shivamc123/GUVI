@@ -9,4 +9,4 @@ for i in range(aa):
         if c[i]>c[i-1]:
             y[i]=y[i]+y[i-1]
 print(sum(y))
-shivam@
+#shivam@
