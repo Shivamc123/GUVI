@@ -26,3 +26,4 @@ if text == reversed_text:
     print("YES")
 else:
     print("NO")
+    #shivambhai
